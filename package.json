@@ -1,0 +1,31 @@
+{
+  "name": "meldale",
+  "version": "1.0.0",
+  "description": "A theme designed for, and in collaboration with the mighty Mel Dale",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/killinski/meldale.git"
+  },
+  "keywords": [
+    "wordpress",
+    "comics",
+    "fonts",
+    "sass"
+  ],
+  "author": "Glasgow Shipyard & Mel Dale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/killinski/meldale/issues"
+  },
+  "homepage": "https://github.com/killinski/meldale#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
