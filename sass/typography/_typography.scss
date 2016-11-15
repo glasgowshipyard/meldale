@@ -9,6 +9,19 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
+@font-face {
+    font-family: 'League Spartan';
+    src: url('webfonts/leaguespartan-bold.eot');
+    src: url('webfonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/leaguespartan-bold.woff2') format('woff2'),
+         url('webfonts/leaguespartan-bold.woff') format('woff'),
+         url('webfonts/leaguespartan-bold.ttf') format('truetype'),
+         url('webfonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @import "headings";
 
 @import "copy";

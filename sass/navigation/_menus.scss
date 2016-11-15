@@ -3,6 +3,8 @@
 	display: block;
 	float: left;
 	width: 100%;
+	text-transform: uppercase;
+	font-family: $spartan;
 
 	ul {
 		display: none;
@@ -32,6 +34,7 @@
 
 			a {
 				width: 200px;
+				
 			}
 
 			:hover > a,
@@ -40,6 +43,8 @@
 
 			a:hover,
 			a.focus {
+				color: white;
+			background-color: black;
 			}
 		}
 
@@ -50,9 +55,7 @@
 	}
 
 	li {
-		float: left;
-		position: relative;
-
+		text-align: center;
 		&:hover > a,
 		&.focus > a {
 		}
