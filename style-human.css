@@ -714,6 +714,13 @@ header#masthead {
   border-bottom-style: double;
 }
 
+header#masthead:after {
+  content: "";
+  border-bottom: 4px solid #000;
+  width: 100%;
+  margin-bottom: 2px;
+}
+
 .site-branding {
   text-align: center;
 }

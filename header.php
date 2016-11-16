@@ -32,5 +32,5 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
-
+<span class="triple"></span>
 	<div id="content" class="site-content">
