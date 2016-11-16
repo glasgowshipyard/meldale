@@ -25,7 +25,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-		<img src="mel_dale_logo.svg" alt="<?php bloginfo( 'name' ); ?>" role="img">
+		<img src="<?php bloginfo('stylesheet_directory'); ?>/mel_dale_logo.svg" alt="<?php bloginfo( 'name' ); ?>" role="img">
 		</div><!-- .site-branding -->
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'meldale' ); ?></button>
