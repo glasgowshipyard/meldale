@@ -264,7 +264,7 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #000000;
   font-family: "PT Mono", Courier, monospace;
   font-size: 16px;
   font-size: 1rem;
@@ -507,13 +507,13 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #404040;
+  color: #000000;
 }
 a:visited {
-  color: #404040;
+  color: #000000;
 }
 a:hover, a:focus, a:active {
-  color: #000000;
+  color: #404040;
 }
 a:focus {
   outline: thin dotted;
@@ -710,13 +710,13 @@ a:hover, a:active {
 # Content
 --------------------------------------------------------------*/
 header#masthead {
-  border-bottom: 10px solid black;
+  border-bottom: 6px solid black;
   border-bottom-style: double;
 }
 
 header#masthead:after {
   content: "";
-  border-bottom: 4px solid #000;
+  border-bottom: 2px solid black;
   width: 100%;
   margin-bottom: 2px;
 }
