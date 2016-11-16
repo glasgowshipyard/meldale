@@ -11,6 +11,7 @@
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		text-align: center;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -34,7 +35,6 @@
 
 			a {
 				width: 200px;
-				
 			}
 
 			:hover > a,
@@ -43,8 +43,6 @@
 
 			a:hover,
 			a.focus {
-				color: white;
-			background-color: black;
 			}
 		}
 
@@ -55,7 +53,10 @@
 	}
 
 	li {
-		text-align: center;
+		float: none;
+		display: inline-block;
+		padding: 0 1em;
+
 		&:hover > a,
 		&.focus > a {
 		}

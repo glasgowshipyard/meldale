@@ -9,3 +9,14 @@
 ## Comments
 --------------------------------------------------------------*/
 @import "primary/comments";
+
+.site-content,
+.site-footer {
+	margin: auto;
+	overflow: hidden;
+	width: $size__site-main;
+}
+
+.site-footer {
+	text-align: center;
+}
