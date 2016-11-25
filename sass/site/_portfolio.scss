@@ -1,0 +1,62 @@
+#design {
+	/* Prevent vertical gaps */
+  line-height: 0;
+  max-width: 640px;
+  margin: auto;
+}
+
+#design img {
+  -webkit-column-count: 2;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    2;
+  -moz-column-gap:      0px;
+  column-count:         2;
+  column-gap:           0px;
+}
+
+#design img:first-of-type,
+#design img:last-of-type {
+	-webkit-column-count: 1;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    1;
+  -moz-column-gap:      0px;
+  column-count:         1;
+  column-gap:           0px;
+  width: 100% !important;
+	
+}
+
+#design img:nth-last-of-type(4) {
+	max-width: 66%;
+	//max-height: 60%;
+}
+
+
+#design img:nth-last-of-type(2),
+#design img:nth-last-of-type(3){
+	max-width: 33%;
+	//max-height: 30%;
+}
+
+
+#design img:nth-last-of-type(2),
+#design img:nth-last-of-type(3),
+#design img:nth-last-of-type(4){
+	float: left;
+}
+
+#design img {
+  /* Just in case there are inline attributes */
+    height: auto !important;
+}
+
+ @media (max-width: 400px) {
+  #design img{
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  float: none;
+  width: 100% !important;
+  max-width: 100% !important;
+  }
+}
