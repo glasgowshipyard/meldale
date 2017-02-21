@@ -23,3 +23,32 @@ object {
 ## Galleries
 --------------------------------------------------------------*/
 @import "galleries";
+
+ @media (max-width: 400px) {
+  #design img,
+  #mel-dale-design{
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  flex-direction: column;
+  float: none;
+  width: 100% !important;
+  max-width: 100% !important;
+  }
+}
+
+@media all and (max-width: 799px) and (min-width: 768px) {
+	img.melwings{
+		width: 50%;
+		}
+	img.coat-of-arms{
+		width: 60%;
+}}
+
+@media all and (max-width: 767px){
+	img.melwings{
+		width: 100%;
+		}
+	img.coat-of-arms{
+		width: 80%;
+}}

@@ -94,9 +94,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-@import "header/header";
+@import "site/header";
 @import "site/site";
 @import "site/portfolio";
+@import "site/front";
+@import "site/jimmys";
+@import "site/footer";
+@import "site/cart";
 
 
 /*--------------------------------------------------------------

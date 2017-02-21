@@ -1,0 +1,22 @@
+.site-footer {
+	text-align: center;
+	border-top: 6px solid black;
+	border-top-style: double;
+	}
+	
+.site-footer:before {
+	content:"";
+	border-top: 2px solid black;
+	width: 100%;
+	margin-top: 2px;
+}
+
+.site-info {
+	margin-top: 1em;
+	padding-bottom: 5em;
+	font-size: .75em;
+}
+
+.coat-of-arms {
+	padding-bottom: .5em;
+}

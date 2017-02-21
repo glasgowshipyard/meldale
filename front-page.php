@@ -1,8 +1,7 @@
 <?php
 /**
- * Template Name: Design Portfolio Template for Mel Dale
+ * The template for Mel Dale Front Page
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package meldale
  */
@@ -11,30 +10,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<section id="mel-dale-design">
-					<?php 
-					$args = array(
-						//'posts_per_page' => 3,
-						'category_name'	=> 'mel dale design'
-					);
-					$query = new WP_Query( $args );
-					// The Loop
-					if ( $query->have_posts() ) {
-						while ( $query->have_posts() ) {
-							$query->the_post();
-							echo '<div class="designs">';
-							echo '<a href="' . get_permalink() . '">';
-							if (has_post_thumbnail()) {
-							the_post_thumbnail('mel-dale-design-pic');
-							echo '</a>';
-							echo '</div>';
-							}
-						}
-					}
-					/* Restore original Post Data */
-					wp_reset_postdata();
-					?>
-			</section><!-- #mel-dale-design -->
+
 			<?php
 			while ( have_posts() ) : the_post();
 
@@ -47,6 +23,33 @@ get_header(); ?>
 
 			endwhile; // End of the loop.
 			?>
+			<h1 class="front">Recent Designs</h1>
+			<section id="mel-dale-design">
+					<?php 
+					$args = array(
+						'posts_per_page' => 3,
+						'category_name'	=> 'mel dale design'
+					);
+					$query = new WP_Query( $args );
+					// The Loop
+					if ( $query->have_posts() ) {
+						while ( $query->have_posts() ) {
+							$query->the_post();
+							echo '<a href="' . get_permalink() . '">';
+							if (has_post_thumbnail()) {
+							the_post_thumbnail('mel-dale-design-pic');
+							echo '</a>';
+							}
+						}
+					}
+					/* Restore original Post Data */
+					wp_reset_postdata();
+					?>
+			</section><!-- #mel-dale-design -->
+			<section id="breaker"></section>
+			<h1 class="front">Recent Comics</h1>
+					<?php echo do_shortcode("[featured_products per_page='3' columns='3']"); ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

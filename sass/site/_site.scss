@@ -10,6 +10,12 @@
 --------------------------------------------------------------*/
 @import "primary/comments";
 
+.site {
+	background: white;
+	max-width: $site__no-bigger;
+	margin: auto;
+}
+.site-header,
 .site-content,
 .site-footer {
 	margin: auto;
@@ -17,6 +23,18 @@
 	width: $size__site-main;
 }
 
-.site-footer {
-	text-align: center;
+.entry-footer span {
+	padding: 0 .5em;
+}
+
+#breaker {
+	border-bottom: 6px solid black;
+	border-bottom-style: double;
+	}
+	
+#breaker:after {
+	content:"";
+	border-bottom: 2px solid black;
+	width: 100%;
+	margin-bottom: 2px;
 }

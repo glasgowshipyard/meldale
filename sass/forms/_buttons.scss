@@ -2,15 +2,19 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: $color__border-button;
-	border-radius: 3px;
-	background: $color__background-button;
-	box-shadow: none;
-	@include font-size(0.75);
+	color: $color__text-input !important;
+	border: 2px solid !important;
+	border-color: $color__border-button !important;
+	//border-radius: 3px;
+	background: $color__background-button !important;
+	box-shadow: none !important;
+	//@include font-size(0.75);
 	line-height: 1;
-	padding: .6em 1em .4em;
+	padding: .8em 1em .4em  !important;
 	text-shadow: none;
+	text-transform: uppercase;
+	font-family: $spartan;
+	//min-width: 200px !important;
 
 	&:hover {
 		border-color: $color__border-button-hover;
@@ -22,4 +26,5 @@ input[type="submit"] {
 		border-color: $color__border-button-focus;
 		box-shadow: none;
 	}
+	
 }
